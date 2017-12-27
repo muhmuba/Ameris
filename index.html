@@ -550,27 +550,5 @@
 			getDevice();
 		});
 	</script>
-
-	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-	<script>
-		// Initialize Firebase
-		var config = {
-		    apiKey: "AIzaSyDUN8sMnRHXXtjAAZQRP1QQjvrvVcDa32w",
-		    authDomain: "ameris-cafe-project.firebaseapp.com",
-		    databaseURL: "https://ameris-cafe-project.firebaseio.com",
-		    projectId: "ameris-cafe-project",
-		    storageBucket: "ameris-cafe-project.appspot.com",
-		    messagingSenderId: "1055781895875"
-		};
-		firebase.initializeApp(config);
-
-		var menu 	= firebase.database().ref().child('Menu');
-
-		menu.on('value', function (datasnapshot) {
-			var menux = datasnapshot.val();
-			console.log(menux);
-		});
-
-	</script>
 </body>
 </html>
